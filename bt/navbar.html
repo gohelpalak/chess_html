@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="shortcut icon" href="img/power-sharp.svg" type="image/x-icon">
+
+</head>
+<style>
+  .start-75 {
+    left: 40% !important;
+  }
+
+  body {
+    background-image: url(img/wp2599594.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .box-2:hover {
+    border: 1px solid black;
+    color: #b3d9ff;
+  }
+
+  .box-1 {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-height: auto;
+
+  }
+nav ul li a{
+    padding: 10px;
+    display: block;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+ nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    transition: all 0.9s ease-in;
+    transform: scaleX(0.8);
+    transform: scaleY(0.8);
+ }
+ nav ul li:hover a::after{
+    width: 100%;
+ }
+ .dropdown:hover .dropdown-menu {
+    display: block;
+}
+        
+
+</style>
+
+<body>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <nav class="navbar navbar-expand-lg position-relative" style="background-color:rgba(100, 100, 100, 0.5);">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/power-sharp.svg" alt="" height="50px" width="50px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0  fw-medium">
+
+          <div class="dropdown nav-item">
+            <a class="btn nav-link  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Home
+            </a>
+
+            <ul class="dropdown-menu box-1 box-2 hrd" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item hrd" href="#" style="background: rgba(177, 111, 111, 0.3);">
+                  Action
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#" style="background: rgba(177, 111, 111, 0.3);">
+                  Another action
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#" style="background: rgba(177, 111, 111, 0.3);" >
+                  Something else here
+                </a>
+
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="dropdown nav-item">
+            <a class="btn nav-link  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              About
+            </a>
+
+            <ul class="dropdown-menu box-1 box-2" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#" style="background: rgba(177, 111, 111, 0.3);">
+                  Action
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#"style="background: rgba(177, 111, 111, 0.3);">
+                  Another action
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#" style="background: rgba(177, 111, 111, 0.3);">
+                  Something else here
+                </a>
+
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="dropdown nav-item">
+            <a class="btn nav-link  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              contact us
+            </a>
+
+            <ul class="dropdown-menu box-1 box-2" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#" style="background: rgba(177, 111, 111, 0.3);">
+                  Action
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#" style="background: rgba(177, 111, 111, 0.3);">
+                  Another action
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#" style="background: rgba(177, 111, 111, 0.3);">
+                  Something else here
+                </a>
+
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="dropdown nav-item">
+            <a class="btn nav-link  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              History
+            </a>
+
+            <ul class="dropdown-menu box-1 box-2" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#" style="background: rgba(177, 111, 111, 0.3);">
+                  Action
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#" style="background: rgba(177, 111, 111, 0.3);">
+                  Another action
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#"  style="background: rgba(177, 111, 111, 0.3);">
+                  Something else here
+                </a>
+
+              </li>
+            </ul>
+
+          </div>
+
+
+        </ul>
+        <form class="d-flex position-absolute start-75  " role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-primary ms-2 rounded-pill" type="submit">Search</button>
+        </form>
+
+      </div>
+      <nav>
+        <form>
+          <button class="btn btn-outline-success bg-dark rounded-pill" type="button">Main button</button>
+          <button class="btn btn-sm btn-outline-success bg-dark me-2 rounded-pill" type="button">Smaller button</button>
+        </form>
+      </nav>
+    </div>
+  </nav>
+  <div class="box-1 w-25 position-relative py-2 px-4  border border-secondary rounded-pill mt-2 ">
+    Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding,
+ <svg width="1em" height="1em" viewBox="0 0 16 16"
+      class="position-absolute top-0 start-50 translate-middle mt-1"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+    </svg>
+  </div>
+
+</body>
+
+</html>
